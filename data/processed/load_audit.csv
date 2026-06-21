@@ -1,0 +1,8 @@
+table_name,file_name,rows_loaded,status,error,timestamp
+companies,companies.csv,92,SUCCESS,,2026-06-21 11:08:53
+profitandloss,profitandloss.csv,1276,SUCCESS,,2026-06-21 11:08:53
+balancesheet,balancesheet.csv,1312,SUCCESS,,2026-06-21 11:08:54
+cashflow,cashflow.csv,1187,SUCCESS,,2026-06-21 11:08:54
+analysis,analysis.csv,20,SUCCESS,,2026-06-21 11:08:54
+documents,documents.csv,1585,SUCCESS,,2026-06-21 11:08:54
+prosandcons,prosandcons.csv,16,SUCCESS,,2026-06-21 11:08:54
