@@ -1,0 +1,133 @@
+# 📊 N100 Sprint 2 – Financial Ratio Engine
+
+A production-style financial analytics engine built for computing **50+ financial KPIs** across **92 companies over multiple years**.  
+This project processes raw financial statements and transforms them into structured, decision-ready financial intelligence.
+
+---
+
+## 🚀 Project Objective
+
+To build a **scalable financial ratio engine** that:
+
+- Computes profitability, leverage, efficiency, and cash flow KPIs
+- Handles real-world financial edge cases (negative equity, debt-free firms, etc.)
+- Generates growth metrics using CAGR models
+- Produces structured datasets for financial analysis
+
+---
+
+## 🧠 Key Features
+
+### 📌 1. Profitability Ratios
+- Net Profit Margin
+- Operating Profit Margin
+- Return on Equity (ROE)
+- Return on Assets (ROA)
+- Return on Capital Employed (ROCE)
+
+---
+
+### 📌 2. Leverage & Efficiency Metrics
+- Debt-to-Equity Ratio
+- Interest Coverage Ratio
+- Net Debt Calculation
+- Asset Turnover Ratio
+- High Leverage Flagging System
+
+---
+
+### 📌 3. Cash Flow Analytics
+- Free Cash Flow (FCF)
+- CFO Quality Score
+- CapEx Intensity Classification
+- FCF Conversion Rate
+- Capital Allocation Pattern Detection (8 business patterns)
+
+---
+
+### 📌 4. Growth Engine (CAGR)
+- Revenue CAGR (3Y / 5Y / 10Y)
+- PAT CAGR (3Y / 5Y / 10Y)
+- EPS CAGR (3Y / 5Y / 10Y)
+
+Includes edge-case handling:
+- Turnaround companies
+- Negative-to-positive transitions
+- Zero-base scenarios
+- Insufficient data handling
+
+---
+
+## ⚙️ Tech Stack
+
+- Python 🐍
+- Pandas
+- SQLite
+- Excel datasets
+- Modular analytics architecture
+
+---
+
+## 🗂️ Project Structure
+N100_Project_sprint-2/
+│
+├── main.py
+├── src/
+│ └── analytics/
+│ ├── ratios.py
+│ ├── cashflow_kpis.py
+│ └── cagr.py
+│
+├── output/
+│ └── capital_allocation.csv
+│
+└── datasets/ (optional local use)
+
+
+---
+
+## 🧮 Output Generated
+
+### 📌 Database
+- `financial_ratios` table in SQLite
+- 1150+ company-year rows
+
+### 📌 CSV Output
+- Capital allocation classification for all companies:
+  - Reinvestor
+  - Shareholder Returns
+  - Cash Accumulator
+  - Distress Signal
+  - Growth Funded by Debt
+  - Liquidating Assets
+  - Pre-Revenue
+  - Mixed
+
+---
+
+## 📊 Business Intelligence Capabilities
+
+This engine enables:
+
+- Financial health screening
+- Risk detection using leverage flags
+- Cash flow quality assessment
+- Capital allocation strategy classification
+- Multi-year growth trend analysis
+
+---
+
+## 🧩 Edge Case Handling
+
+- Division-by-zero protection
+- Negative equity handling
+- Debt-free company classification
+- Financial sector leverage adjustment
+- Missing data safeguards
+
+---
+
+## 📌 How to Run
+
+```bash
+python main.py
